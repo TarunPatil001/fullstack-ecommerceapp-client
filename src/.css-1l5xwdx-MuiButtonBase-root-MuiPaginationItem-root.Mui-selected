@@ -518,7 +518,7 @@ nav ul button:hover {
 
 
 /* ------ Pagination hover color --------- */
-.css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+.css-1ba5ub6.Mui-selected {
   background-color: var(--bg-primary) !important;
   color: #fff;
 }
