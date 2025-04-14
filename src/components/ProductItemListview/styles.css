@@ -1,0 +1,17 @@
+.productItemListView .title{
+    line-height: 18px;
+}
+
+.productItemListView .actions button:hover svg{
+    color: #fff !important;
+}
+
+.productItemListView .actions button svg{
+    pointer-events: none !important;
+}
+
+.heartBtn {
+    color: rgba(255,255,255,0.9) !important;
+  }
+
+  

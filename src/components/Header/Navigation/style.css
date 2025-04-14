@@ -1,0 +1,82 @@
+/* Basic Button Style */
+.categoryPanel button {
+  text-transform: capitalize !important;
+}
+
+nav .col_1 button:hover {
+  background-color: var(--bg-primary-lite) !important;
+}
+
+button {
+  background: none !important;
+}
+
+/* Hide submenus by default */
+.nav li .submenu {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  font-weight: 400 !important;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for main navigation items */
+.nav li:hover > a > button {
+  color: var(--bg-primary) !important;
+}
+
+/* Show submenu on hover (main submenu) */
+.nav li:hover .submenu {
+  visibility: visible;
+  opacity: 1 !important;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Nested submenu (child submenu) behavior */
+.nav li .submenu li .submenu {
+  top: 0px !important;
+  left: 120% !important;
+  opacity: 0 !important;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Show nested submenu on hover */
+.nav li .submenu li:hover .submenu {
+  left: 100% !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Change button color when hovering over nested submenus */
+.nav li .submenu li:hover button {
+  color: var(--bg-primary) !important;
+}
+
+/* Ensure correct color for nested submenu buttons */
+.nav li .submenu li .submenu button {
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Change color of nested submenu buttons on hover */
+.nav li .submenu li .submenu button:hover {
+  color: var(--bg-primary) !important;
+}
+
+/* Ensure the submenu for subcategories only appears on hover over parent menu items */
+.nav li:hover > .submenu {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Handle hover transition for the parent menu when mouse moves across childsubmenu */
+.nav li .submenu li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
