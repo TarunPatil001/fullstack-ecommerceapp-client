@@ -461,6 +461,7 @@ const Search = () => {
                       className="p-2 flex gap-3 items-center border-b border-[rgba(0,0,0,0.05)] last:border-b-0 cursor-pointer hover:bg-gray-100 rounded"
                       onClick={() => {
                         navigate(`/product/${item._id}`);
+                        context?.setOpenSearchPanel(!context?.openSearchPanel);
                         setIsFocused(false);
                       }}
                     >
